@@ -1,5 +1,5 @@
 title = "syntorch blog"
-baseURL = ''
+baseURL = 'syntorch.github.io'
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
@@ -19,7 +19,8 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 
 # To enable Disqus comments, provide Disqus Shortname below.
 # To disable Disqus comments, simply leave the field empty or remove the next line
-disqusShortname = ''
+[params]
+CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]

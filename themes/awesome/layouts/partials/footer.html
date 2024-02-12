@@ -8,6 +8,9 @@
     <small class="footer_copyright">
         <p> © {{ now.Format "2006" }} {{ .Site.Params.author.name }}. </p>
         <p> {{ T "footer.disclaimer" | safeHTML }} </p>
+        {{- if .Site.Params.CusdisID -}}
+        <p> {{ T "comment_footer.disclaimer" | safeHTML }} </p>
+        {{- end -}}
     </small>
 </footer>
 

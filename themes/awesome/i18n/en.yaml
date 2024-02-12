@@ -19,6 +19,9 @@
 - id: "footer.disclaimer"
   translation: "Powered by modified <a href=\"https://github.com/hugo-sid/hugo-blog-awesome\" target=\"_blank\" rel=\"noopener\">Hugo blog awesome</a>."
 
+- id: "comment_footer.disclaimer"
+  translation: "Comment powered by <a href=\"https://cusdis.com\" target=\"_blank\" rel=\"noopener\">Cusdis</a>."
+  
 ## ERRORS ##
 - id: "errors.404"
   translation: "404 NOT FOUND"
