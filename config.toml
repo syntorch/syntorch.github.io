@@ -1,4 +1,4 @@
-title = "Awesome Hugo blog"
+title = "syntorch blog"
 baseURL = ''
 
 # This is what goes in <html lang="">
@@ -7,7 +7,7 @@ languageCode = 'en-us'
 theme = "awesome"
 
 # This defines how dates are formatted
-defaultContentLanguage = "en-gb"
+defaultContentLanguage = "zh"
 
 # To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
 # To disable Google Analytics, simply leave the field empty or remove the next line
@@ -28,39 +28,44 @@ disqusShortname = ''
   [markup.goldmark.renderer]
     unsafe = true
 	[markup.tableOfContents]
-		startLevel = 2 # ToC starts from H2
-		endLevel = 4 # ToC ends at H4
+		startLevel = 1 # ToC starts from H1
+		endLevel = 3 # ToC ends at H3
 		ordered = false # generates <ul> instead of <ol>
 
 ############################## English language ################################
-[Languages.en-gb]
+[Languages.en]
   languageName = "English"
-  languageCode = "en-gb"
+  languageCode = "en"
   contentDir = "content/en"
   weight = 1
 
-  [Languages.en-gb.menu]
-  [[Languages.en-gb.menu.main]]
+  [Languages.en.menu]
+  [[Languages.en.menu.main]]
     # The page reference (pageRef) is useful for menu highlighting
     # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
     pageRef="/"
     name = 'Home'
     url = '/'
     weight = 10
-  [[Languages.en-gb.menu.main]]
+  [[Languages.en.menu.main]]
     pageRef="posts"
     name = 'Posts'
     url = '/posts/'
     weight = 20
-  [[Languages.en-gb.menu.main]]
+  [[Languages.en.menu.main]]
+    pageRef="goods"
+    name = 'Goods'
+    url = '/goods/'
+    weight = 30
+  [[Languages.en.menu.main]]
     pageRef="about"
     name = 'About'
     url = '/about/'
-    weight = 30
+    weight = 40
 
-[Languages.en-gb.params]
+[Languages.en.params]
   sitename = "Awesome hugo blog"
-  defaultColor = "light" # set color mode: dark, light, auto
+  defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
@@ -76,20 +81,20 @@ disqusShortname = ''
   # The file `custom.js` is loaded on each page (before body tag ends).
   dateFormat = "" # date format used to show dates on various pages. If nothing is specified, then "2 Jan 2006" format is used.
   # See https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for available date formats.
-  rssFeedDescription = "summary" # available options: 1) summary 2) full
+  rssFeedDescription = "full" # available options: 1) summary 2) full
   # summary - includes a short summary of the blog post in the RSS feed. Generated using Hugo .Summary .
   # full - includes full blog post in the RSS feed. Generated using Hugo .Content .
   # By default (or if nothing is specified), summary is used.
 
-[Languages.en-gb.params.author]
+[Languages.en.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Awesome hugo blog"
-  name = "Sidharth R"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
+  intro = "Take ノ Blog"
+  name = "syntorch"
+  description = "A blog."
 
 # Allow to override webmanifest options
-[Languages.en-gb.params.webmanifest]
+[Languages.en.params.webmanifest]
   name = "sitename" # will use "params.sitename" or "title" by default
   short_name = "sitename" # same as name
   start_url = "/" # will use homepage url by default
@@ -97,38 +102,43 @@ disqusShortname = ''
   background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
   display = "standalone"
 
-############################## Italian language ################################
-[Languages.it]
-  languageName = "Italian"
-  languageCode = "it"
-  contentDir = "content/it"
+############################## Chinese language ################################
+[Languages.zh]
+  languageName = "Chinese"
+  languageCode = "zh"
+  contentDir = "content/zh"
   weight = 2
-  [Languages.it.menu]
-  [[Languages.it.menu.main]]
+  [Languages.zh.menu]
+  [[Languages.zh.menu.main]]
     # The page reference (pageRef) is useful for menu highlighting
     # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
     pageRef="/"
-    name = 'Inizio'
+    name = '主页'
     url = '/'
     weight = 10
-  [[Languages.it.menu.main]]
+  [[Languages.zh.menu.main]]
     pageRef="posts"
-    name = 'Articoli'
+    name = '博客'
     url = '/posts/'
     weight = 20
-  [[Languages.it.menu.main]]
-    pageRef="about"
-    name = 'Chi Sono'
-    url = '/about/'
+  [[Languages.zh.menu.main]]
+    pageRef="goods"
+    name = '好物'
+    url = '/goods/'
     weight = 30
+  [[Languages.zh.menu.main]]
+    pageRef="about"
+    name = '关于'
+    url = '/about/'
+    weight = 40
 
-[Languages.it.params]
-  sitename = "Awesome hugo blog"
-  defaultColor = "dark" # set color mode: dark, light, auto
+[Languages.zh.params]
+  sitename = "syntorch blog"
+  defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale"
+  description = "一个博客。"
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -138,22 +148,22 @@ disqusShortname = ''
   # Your custom scripts will be concatinated to one file `custom.js`.
   # When building for production it will be minified.
   # The file `custom.js` is loaded on each page (before body tag ends).
-  dateFormat = "2 January 2006" # default date format used on various pages
+  dateFormat = "2006-01-01" # default date format used on various pages
   # See https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for available date formats.
-  rssFeedDescription = "summary" # available options: 1) summary 2) full
+  rssFeedDescription = "full" # available options: 1) summary 2) full
   # summary - includes a short summary of the blog post in the RSS feed. Generated using Hugo .Summary .
   # full - includes full blog post in the RSS feed. Generated using Hugo .Content .
   # By default (or if nothing is specified), summary is used.
 
-[Languages.it.params.author]
+[Languages.zh.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Awesome hugo blog"
-  name = "Sidharth R"
-  description = "Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale."
+  intro = "Take ノ Blog"
+  name = "syntorch"
+  description = "一个博客。"
 
 # Allow to override webmanifest options
-[Languages.it.params.webmanifest]
+[Languages.zh.params.webmanifest]
   name = "sitename" # will use "params.sitename" or "title" by default
   short_name = "sitename" # same as name
   start_url = "/" # will use homepage url by default
@@ -171,9 +181,14 @@ disqusShortname = ''
 name = "github"
 url = "https://github.com/syntorch"
 
+# [[params.socialIcons]]
+# name = "twitter"
+# url = "https://twitter.com"
+
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com"
+name = "bilibili"
+url = "https://bilibili.com"
+
 
 [[params.socialIcons]]
 name = "Rss"

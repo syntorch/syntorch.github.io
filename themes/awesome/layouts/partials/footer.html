@@ -6,8 +6,8 @@
         {{- partial "socialIcons.html" site.Params.socialIcons -}}
     </div>
     <small class="footer_copyright">
-        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
-        {{ T "footer.disclaimer" | safeHTML }}
+        <p> © {{ now.Format "2006" }} {{ .Site.Params.author.name }}. </p>
+        <p> {{ T "footer.disclaimer" | safeHTML }} </p>
     </small>
 </footer>
 

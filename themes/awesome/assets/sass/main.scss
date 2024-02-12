@@ -53,7 +53,7 @@ $wide-size: 890px;
 $narrow-size: 720px;
 
 // Padding unit
-$spacing-full: 30px;
+$spacing-full: 22px;
 $spacing-half: $spacing-full / 2;
 
 // Screen sizes
@@ -90,3 +90,5 @@ $on-widescreen: 1152px;
 {{ with .Site.Params.goToTop }}
 @import "goToTop";
 {{ end }}
+
+

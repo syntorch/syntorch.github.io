@@ -1,7 +1,9 @@
 ---
 title:
 date: {{ .Date }}
-draft: true
 description:
+author: {{ .Site.Params.author.name }}
+draft: true
+
 ---
 
