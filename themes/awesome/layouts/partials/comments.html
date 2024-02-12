@@ -5,9 +5,9 @@
     <div id="cusdis_thread"
     data-host="https://cusdis.com"
     data-app-id="{{ .Site.Params.CusdisID }}"
-    data-page-id="{{ .File.UniqueID }}"
-    data-page-url="{{ .RelPermalink }}"
-    data-page-title="{{ .Title }}"
+    data-page-id="{{ .Page.File.UniqueID }}"
+    data-page-url="{{ .Page.Permalink }}"
+    data-page-title="{{ .Page.Title }}"
     ></div>
 
     <script async defer>window.CUSDIS_LOCALE = {

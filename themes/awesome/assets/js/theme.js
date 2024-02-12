@@ -49,9 +49,12 @@
     const toggleTheme = () => {
         const state = getThemeState();
         if (state === THEMES.DARK) {
+            window.CUSDIS.setTheme('light');
             localStorage.setItem(LS_THEME_KEY, THEMES.LIGHT);
             initTheme(THEMES.LIGHT);
         } else if (state === THEMES.LIGHT) {
+            window.CUSDIS.setTheme('dark');
+            // window.CUSDIS.renderTo(target: HTMLElement)
             localStorage.setItem(LS_THEME_KEY, THEMES.DARK);
             initTheme(THEMES.DARK);
         }
