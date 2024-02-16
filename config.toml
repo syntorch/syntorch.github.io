@@ -33,6 +33,9 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
 		endLevel = 3 # ToC ends at H3
 		ordered = false # generates <ul> instead of <ol>
 
+[taxonomies]
+  tag = "tags"
+
 ############################## English language ################################
 [Languages.en]
   languageName = "English"
@@ -132,6 +135,13 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
     name = '好物'
     url = '/goods/'
     weight = 40
+
+  [[Languages.zh.menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 45
+    url = "/tags/"
+
   [[Languages.zh.menu.main]]
     pageRef="about"
     name = '关于'

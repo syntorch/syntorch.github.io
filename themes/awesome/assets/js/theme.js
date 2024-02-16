@@ -68,9 +68,9 @@
 
     window.addEventListener("DOMContentLoaded", () => {
         // Theme switch
-        const lamp = document.getElementById("mode");
+        // const lamp = document.getElementById("mode");
 
-        lamp.addEventListener("click", () => toggleTheme());
+        // lamp.addEventListener("click", () => toggleTheme());
 
         // Blur the content when the menu is open
         const cbox = document.getElementById("menu-trigger");
