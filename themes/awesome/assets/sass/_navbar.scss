@@ -37,7 +37,8 @@
     }
 
     .menu-separator {
-      margin-right: .7rem;
+      margin-left: .3rem;
+      margin-right: .3rem;
       @include media-query($on-mobile) {
         display: none;
       }

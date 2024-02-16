@@ -6,6 +6,7 @@
         DARK: "dark",
         AUTO: "auto",
     };
+    // window.CUSDIS.initial()
 
     const body = document.body;
     const config = body.getAttribute("data-theme");
@@ -37,9 +38,16 @@
         if (state === THEMES.DARK) {
             document.documentElement.classList.add(THEMES.DARK);
             document.documentElement.classList.remove(THEMES.LIGHT);
+            if (window.CUSDIS) {
+                window.CUSDIS.setTheme('dark');
+            }
+            
         } else if (state === THEMES.LIGHT) {
             document.documentElement.classList.remove(THEMES.DARK);
             document.documentElement.classList.add(THEMES.LIGHT);
+            if (window.CUSDIS) {
+                window.CUSDIS.setTheme('light');
+            }
         }
     };
 
@@ -49,11 +57,9 @@
     const toggleTheme = () => {
         const state = getThemeState();
         if (state === THEMES.DARK) {
-            window.CUSDIS.setTheme('light');
             localStorage.setItem(LS_THEME_KEY, THEMES.LIGHT);
             initTheme(THEMES.LIGHT);
         } else if (state === THEMES.LIGHT) {
-            window.CUSDIS.setTheme('dark');
             // window.CUSDIS.renderTo(target: HTMLElement)
             localStorage.setItem(LS_THEME_KEY, THEMES.DARK);
             initTheme(THEMES.DARK);

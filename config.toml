@@ -29,7 +29,7 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
   [markup.goldmark.renderer]
     unsafe = true
 	[markup.tableOfContents]
-		startLevel = 1 # ToC starts from H1
+		startLevel = 2 # ToC starts from H2
 		endLevel = 3 # ToC ends at H3
 		ordered = false # generates <ul> instead of <ol>
 
@@ -66,12 +66,12 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
 
 [Languages.en.params]
   sitename = "Awesome hugo blog"
-  defaultColor = "auto" # set color mode: dark, light, auto
+  defaultColor = "light" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
   description = "Minimal Hugo blog theme with light and dark mode support"
-  mainSections = ['posts']
+  mainSections = ['posts', 'daily']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
@@ -120,18 +120,23 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
   [[Languages.zh.menu.main]]
     pageRef="posts"
     name = '博客'
-    url = '/posts/'
+    url = '/1tech/'
     weight = 20
+  [[Languages.zh.menu.main]]
+    pageRef="daily"
+    name = '日常'
+    url = '/2daily/'
+    weight = 30
   [[Languages.zh.menu.main]]
     pageRef="goods"
     name = '好物'
     url = '/goods/'
-    weight = 30
+    weight = 40
   [[Languages.zh.menu.main]]
     pageRef="about"
     name = '关于'
     url = '/about/'
-    weight = 40
+    weight = 50
 
 [Languages.zh.params]
   sitename = "syntorch blog"
@@ -139,8 +144,8 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "一个博客。"
-  mainSections = ['posts']
+  description = "Take's Blog"
+  mainSections = ['1tech', '2daily']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
@@ -149,7 +154,7 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
   # Your custom scripts will be concatinated to one file `custom.js`.
   # When building for production it will be minified.
   # The file `custom.js` is loaded on each page (before body tag ends).
-  dateFormat = "2006-01-01" # default date format used on various pages
+  dateFormat = "2006-01-02" # default date format used on various pages
   # See https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for available date formats.
   rssFeedDescription = "full" # available options: 1) summary 2) full
   # summary - includes a short summary of the blog post in the RSS feed. Generated using Hugo .Summary .
@@ -161,7 +166,7 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Take ノ Blog"
   name = "syntorch"
-  description = "一个博客。"
+  description = "A Memory Palace"
 
 # Allow to override webmanifest options
 [Languages.zh.params.webmanifest]
