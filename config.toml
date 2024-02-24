@@ -1,5 +1,5 @@
-title = "syntorch blog"
-baseURL = 'syntorch.github.io'
+title = "take's blog"
+baseURL = 'www.takeblog.cc'
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
@@ -68,7 +68,7 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
     weight = 40
 
 [Languages.en.params]
-  sitename = "Awesome hugo blog"
+  sitename = "take's blog"
   defaultColor = "light" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -149,7 +149,7 @@ CusdisID = 'd87dc04f-8abe-44e8-9628-b272ce4cb12f'
     weight = 50
 
 [Languages.zh.params]
-  sitename = "syntorch blog"
+  sitename = "take's blog"
   defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
